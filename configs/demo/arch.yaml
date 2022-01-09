@@ -1,0 +1,15 @@
+# Sweep config
+sweep_config:
+  name: arch
+  method: grid  # grid, random, bayes
+  metric:
+    name: Mean
+    goal: maximize
+  parameters:
+    T1:
+      values: [125, 64]
+    T2:
+      values: [66, 33]
+
+# Iteration
+count: null

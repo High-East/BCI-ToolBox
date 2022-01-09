@@ -1,0 +1,56 @@
+# W&B
+sweep_file: configs/demo/training_params.yaml
+#sweep_type: arch
+project: Demo
+tags: [train]
+#notes: "Notes"
+#id: eyyc12ws
+#resume: allow
+
+# Directory
+save_dir: demo
+
+# Mode
+mode: train
+
+# Model
+model: EEGNet
+arch_file: configs/EEGNet/default.yaml
+arch: {}
+
+# Data
+total_subject: 9
+#target_subject: [1, 2]
+#tmp_data: [144,1,22,1125]
+#folder: /home/user/disk2/BCI-datasets/2a/4-classes/no-val
+dataset: 2a
+preprocess:
+  start_time: -0.5
+  end_time: 4
+  band: [[0, 40]]
+  is_session: True
+  resampling: 250
+transform:
+#  LabelSelection: [0, 1]
+  ToTensor: True
+#  TimeSegmentation:
+#    window_size: 400
+#    step_size: 50
+is_val: False
+is_test: True
+
+# Train
+trainer: cls
+criterion: CEE
+metrics: [loss, acc]
+epochs: 10
+batch_size: 72
+opt: Adam
+lr: 0.002
+wd: 0.002
+scheduler: cosine
+eta_min: 0
+
+# Miscellaneous
+seed: 42
+

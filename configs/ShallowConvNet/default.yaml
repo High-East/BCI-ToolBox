@@ -1,0 +1,11 @@
+weight_init_method: xavier_uni
+
+T1: 25
+F1: 40
+F2: 40
+P1_T: 75
+P1_S: 15
+drop_out: 0.5
+pool_mode: mean
+last_dim: 2760  # time point 1125
+

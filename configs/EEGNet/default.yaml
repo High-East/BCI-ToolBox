@@ -1,0 +1,12 @@
+weight_init_method: xavier_uni
+
+F1: 8
+D: 2
+F2: auto
+T1: 125
+T2: 33
+P1: 8
+P2: 16
+drop_out: 0.5
+pool_mode: mean
+

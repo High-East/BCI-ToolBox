@@ -1,0 +1,4 @@
+weight_init_method: default
+
+m: 32
+temporal_stride: 4

@@ -1,0 +1,15 @@
+# Sweep config
+sweep_config:
+  name: training-params
+  method: grid  # grid, random, bayes
+  metric:
+    name: Mean
+    goal: maximize
+  parameters:
+    epochs:
+      values: [3, 5]
+    lr:
+      values: [0.1, 0.01]
+
+# Iteration
+count: null

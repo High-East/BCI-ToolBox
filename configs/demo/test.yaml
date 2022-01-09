@@ -1,0 +1,8 @@
+# Mode
+mode: test
+analysis_method: NULL
+all_subject: True
+#target_subject: [1, 3, 5]
+
+# Path
+load_path: ./result/demo/0

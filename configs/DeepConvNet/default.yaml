@@ -1,0 +1,7 @@
+weight_init_method: xavier_uni
+
+first_conv_length: 10
+block_out_channels: [25, 25, 50, 100, 200]
+pool_size: 3
+last_dim: 1800  # time point 1125
+
