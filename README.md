@@ -1,7 +1,7 @@
 # BCI-ToolBox
 
 ## 1. Introduction
-BCI-ToolBox is deep learning pipeline for motor-imagery classification. 
+BCI-ToolBox is deep learning pipeline for motor-imagery classification.  
 This repo contains five models: ShallowConvNet, DeepConvNet, EEGNet, FBCNet, BCI2021.  
 (BCI2021 is not an official name.)
 
